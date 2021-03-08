@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<meta charset="gb2312" />
+<form>
+	<fieldset>
+		<legend>
+			学院网注册
+		</legend>
+		<table>
+			<tr>
+				<td>
+					用户名 ：
+				</td>
+				<td>
+					<input type="text" id="txtUserName" autofocus="true"
+                    pattern="^[a-zA-Z0-9]{6,}$">
+                    <br>
+                    <span style="color:red;font-size:12px">只允许输入英文和数字,且长度至少为6位</span>
+                    </td>
+			</tr>
+			<tr>
+				<td  valign="top">
+					学 号 ：
+				</td>
+				<td>
+					<input type="text" id="txtAge" pattern="^[1-9]?[0-9]$">
+					<br>
+					<span style="color:red;font-size:12px">只允许输入数字</span>
+
+
+
+				</td>
+			</tr>
+			<tr>
+				<td>
+					电子邮箱：
+				</td>
+							<td>
+					<input type="email" id="inputEmail">
+
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="提交">
+					<input type="reset" value="重置">
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+</form>
+</html>
+
+
