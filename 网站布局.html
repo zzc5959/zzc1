@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.header {
+  background-color: tomato;
+  padding: 20px;
+  text-align: left;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: tomato;
+  opacity: 0.6;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>CSS</h1>
+  <p>Cascading Style Sheets,一种用来表现HTML(标准通用标记语言的一个应用)或XML(标准通用标记语言的一个子集)等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。</p>
+</div>
+
+<div class="topnav">
+  <a href="#">介绍</a>
+  <a href="#">基础教程</a>
+  <a href="#">中级教程</a>
+  <a href="#">高级教程</a>
+</div>
+
+<div class="row">
+  <div class="Column">
+    <h2>编程工具</h2>
+    <p>记事本:使用Windows系统自带的记事本可以编辑网页。只需要在保存文档时，以.html为后缀名进行保存即可。
+
+Dreamweaver:它与Flash、Fireworks并称网页三剑客。Dreamweaver是集网页制作和管理网站于一身的所见即所得网页编辑器，它是第一套针对专业网页设计师特别开发的视觉化网页开发工具，利用它可以轻而易举地制作出充满动感的网页。</p>
+  </div>
+  
+  <div class="column">
+    <h2>工作原理</h2>
+    <p>CSS是一种定义样式结构如字体、颜色、位置等的语言，被用于描述网页上的信息格式化和现实的方式。CSS样式可以直接存储于HTML网页或者单独的样式单文件。无论哪一种方式，样式单包含将样式应用到指定类型的元素的规则。外部使用时，样式单规则被放置在一个带有文件扩展名_css的外部样式单文档中。
+
+样式规则是可应用于网页中元素，如文本段落或链接的格式化指令。样式规则由一个或多个样式属性及其值组成。内部样式单直接放在网页中，外部样式单保存在独立的文档中，网页通过一个特殊标签链接外部样式单。
+
+名称CSS中的"层叠(cascading)"表示样式单规则应用于HTML文档元素的方式。具体地说，CSS样式单中的样式形成一个层次结构，更具体的样式覆盖通用样式。样式规则的优先级由CSS根据这个层次结构决定，从而实现级联效果。</p>
+  </div>
+  
+  <div class="column">
+    <h2>语言特点</h2>
+    <p>丰富的样式定义
+
+CSS提供了丰富的文档样式外观，以及设置文本和背景属性的能力;允许为任何元素创建边框，以及元素边框与其他元素间的距离，以及元素边框与元素内容间的距离;允许随意改变文本的大小写方式、修饰方式以及其他页面效果。
+
+易于使用和修改
+
+CSS可以将样式定义在HTML元素的style属性中，也可以将其定义在HTML文档的header部分，也可以将样式声明在一个专门的CSS文件中，以供HTML页面引用。总之，CSS样式表可以将所有的样式声明统一存放，进行统一管理。
+
+另外，可以将相同样式的元素进行归类，使用同一个样式进行定义，也可以将某个样式应用到所有同名的HTML标签中，也可以将一个CSS样式指定到某个页面元素中。如果要修改样式，我们只需要在样式列表中找到相应的样式声明进行修改。
+
+多页面应用
+
+CSS样式表可以单独存放在一个CSS文件中，这样我们就可以在多个页面中使用同一个CSS样式表。CSS样式表理论上不属于任何页面文件，在任何页面文件中都可以将其引用。这样就可以实现多个页面风格的统一。</p>
+  </div>
+</div>
+</body>
+</html>
